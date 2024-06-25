@@ -58,6 +58,6 @@ function goBack() {
     
     function goBack() {
         // Redirige al index.html
-        window.location.href = 'index.html';
+        window.location.href = 'camiones.html';
     }
 }    
