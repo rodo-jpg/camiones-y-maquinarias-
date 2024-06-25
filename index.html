@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiones y Maquinarias Hermanos Ventura</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>  
+    <header>
+        <div class="logo-header">
+            <img src="img/image.jpg" alt="Logo de Camiones y Maquinarias Hermanos Ventura" class="logo">
+            <h1>Camiones y Maquinarias Hermanos Ventura</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('nosotros')">Nosotros</a></li>
+                <li><a href="#" onclick="showSection('maquinarias')">Maquinarias</a></li>
+                <li><a href="https://wa.me/1234567890" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <section id="inicio" class="active">
+                <h2>Bienvenidos a Camiones y Maquinarias Hermanos Ventura</h2>
+                <p>Somos una empresa líder dedicada a la venta y alquiler de maquinaria pesada, con una sólida trayectoria en el sector de la construcción y minería. Nuestro compromiso es proporcionarte soluciones eficientes y confiables para tus proyectos más exigentes. Contamos con una amplia gama de equipos de última generación, adaptados a las necesidades específicas de cada cliente.</p>
+            
+                <p><strong>Nuestros servicios incluyen:</strong></p>
+                <ul>
+                    <li>Venta y Alquiler de Maquinaria Pesada: Disponemos de una extensa flota de equipos como excavadoras, bulldozers, cargadores frontales, volquetes, grúas, entre otros, para cubrir todas tus necesidades operativas.</li>
+                    <li>Asesoramiento Especializado: Nuestro equipo de expertos está listo para ofrecerte asesoramiento técnico y logístico, asegurando que el equipo seleccionado cumpla con tus requerimientos y expectativas.</li>
+                    <li>Mantenimiento Preventivo y Reparaciones: Garantizamos el mantenimiento periódico de nuestros equipos para optimizar su rendimiento y prolongar su vida útil. Además, ofrecemos servicios de reparación rápidos y eficientes para minimizar tiempos de inactividad.</li>
+                    <li>Soporte 24/7: Estamos comprometidos con tu satisfacción. Por ello, proporcionamos asistencia técnica continua, disponible las 24 horas del día, los 7 días de la semana, para atender cualquier emergencia que pueda surgir.</li>
+                    <li>Compromiso con la Calidad y Seguridad: Priorizamos la seguridad en cada uno de nuestros servicios y equipos. Cumplimos con las normativas y estándares más estrictos para garantizar un entorno de trabajo seguro y confiable.</li>
+                </ul>
+            
+                <p><strong>Contacta con nosotros:</strong></p>
+                <p>Estamos aquí para ayudarte a llevar tu proyecto al siguiente nivel. Ya sea que necesites comprar o alquilar maquinaria pesada, en Camiones y Maquinarias Hermanos Ventura encontrarás la solución perfecta. Visítanos en nuestras instalaciones o contáctanos por teléfono o correo electrónico para más información.</p>
+                <p>¡Confía en nosotros para hacer realidad tus proyectos de construcción y minería con eficiencia y profesionalismo!</p>
+            <img src="img/gente1.png" alt="Imagen destacada" class="hero-image">
+        </section>
+
+        <section id="nosotros" style="display:none;">
+            <h2>Sobre Nosotros</h2>
+            <p>Camiones y Maquinarias Hermanos Ventura es una empresa con más de 20 años de experiencia en el sector de la maquinaria pesada. Nuestro compromiso es ofrecer equipos de la más alta calidad y un servicio excepcional a nuestros clientes.</p>
+            <img src="img/nosotros.jpg" alt="Sobre Nosotros" class="hero-image">
+        </section>
+
+        <section id="maquinarias" style="display:none;">
+            <h2>Unidades</h2>
+            <section class="categories" id="categories">
+                <div class="category-item" onclick="showCategory('tractos')">
+                    <img src="img/tractos.jpg" alt="Tractos">
+                    <h3>TRACTOS</h3>
+                    <p>TRACTOS</p>
+                </div>
+                <div class="category-item" onclick="showCategory('volquetes')">
+                    <img src="img/volquetes.jpg" alt="Volquetes">
+                    <h3>VOLQUETES</h3>
+                    <p>VOLQUETES</p>
+                </div>
+                <div class="category-item" onclick="showCategory('cargadores')">
+                    <img src="img/cargador_frontal.jpg" alt="Cargador Frontal">
+                    <h3>CARGADOR FRONTAL</h3>
+                    <p>CARGADOR FRONTAL</p>
+                </div>
+                <div class="category-item" onclick="showCategory('excavadoras')">
+                    <img src="img/excavadoras.jpg" alt="Excavadoras">
+                    <h3>EXCAVADORAS</h3>
+                    <p>EXCAVADORAS</p>
+                </div>
+                <div class="category-item" onclick="showCategory('otras')">
+                    <img src="img/otras_unidades.jpg" alt="Otras Unidades">
+                    <h3>OTRAS UNIDADES</h3>
+                    <p>OTRAS UNIDADES</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="tractos" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Tractos</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item">
+                <img src="img/tracto1.jpg" alt="Tracto 1">
+                <p>Descripción del Tracto 1</p>
+            </div>
+            <div class="product-item">
+                <img src="img/tracto2.jpg" alt="Tracto 2">
+                <p>Descripción del Tracto 2</p>
+            </div>
+        </section>
+        <section id="volquetes" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Volquetes</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item">
+                <img src="img/volquete1.jpg" alt="Volquete 1">
+                <p>Descripción del Volquete 1</p>
+            </div>
+            <div class="product-item">
+                <img src="img/volquete2.jpg" alt="Volquete 2">
+                <p>Descripción del Volquete 2</p>
+            </div>
+        </section>
+        <section id="cargadores" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Cargador Frontal</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item">
+                <img src="img/cargador1.jpg" alt="Cargador 1">
+                <p>Descripción del Cargador 1</p>
+            </div>
+            <div class="product-item">
+                <img src="img/cargador2.jpg" alt="Cargador 2">
+                <p>Descripción del Cargador 2</p>
+            </div>
+        </section>
+        <section id="excavadoras" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Productos de Excavadoras</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item">
+                <img src="img/excavadora1.jpg" alt="Excavadora 1">
+                <p>Descripción del Excavadora 1</p>
+            </div>
+            <div class="product-item">
+                <img src="img/excavadora2.jpg" alt="Excavadora 2">
+                <p>Descripción del Excavadora 2</p>
+            </div>
+        </section>
+        <section id="otras" class="category-products" style="display:none;">
+            <div class="background-image"></div>
+            <h3>Otras Unidades</h3>
+            <button onclick="goBack()">Regresar</button>
+            <div class="product-item">
+                <img src="img/otra1.jpg" alt="Otra Unidad 1">
+                <p>Descripción de Otra Unidad 1</p>
+            </div>
+            <div class="product-item">
+                <img src="img/otra2.jpg" alt="Otra Unidad 2">
+                <p>Descripción de Otra Unidad 2</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
